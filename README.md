@@ -81,7 +81,7 @@ Les diagrammes sont dans le dossier `diagrammes/`. Cliquez sur chaque lien pour 
 - Résultat attendu : **2 tests passés sur 2** (ajout agent + ajout contravention).
 
 ## Auteur(s)
-- **Nom / Groupe** : Metuschelah-lab (et équipe)
+- **Nom** : KIZYELE KABASELE METUSCHELAH;DIMANDJA  LUNYENGU JOSEPH;ZAGABE AGANZE ESTHER;MONGI JACQUES BRIGANCE.
 - **Année universitaire** : 2025/2026
 - **Cours** : Examen de Génie Logiciel – L3 LIAGE / L4 LSI
 

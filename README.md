@@ -42,10 +42,10 @@ Rendez-vous sur http://localhost:8080/contraventions/index.php?page=tests
 Résultat attendu : 2 tests passés sur 2.
 
 ## Auteurs
-KIZYELE KABASELE METUSCHELAH
-DIMANDJA LUNYENGU JOSEPH
-ZAGABE AGANZE ESTHER
-MONGI JACQUES BRIGANCE
+KIZYELE KABASELE METUSCHELAH;
+DIMANDJA LUNYENGU JOSEPH;
+ZAGABE AGANZE ESTHER;
+MONGI JACQUES BRIGANCE.
 
 Cours : Examen de Génie Logiciel - L3 LIAGE / L4 LSI
 ## Script SQL (à exécuter dans phpMyAdmin)

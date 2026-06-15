@@ -80,10 +80,6 @@ Les diagrammes sont dans le dossier `diagrammes/`. Cliquez sur chaque lien pour 
 - URL directe : `http://localhost:8080/contraventions/index.php?page=tests`
 - Résultat attendu : **2 tests passés sur 2** (ajout agent + ajout contravention).
 
-## Auteur(s)
+## Auteur
 - **Nom** : KIZYELE KABASELE METUSCHELAH;DIMANDJA  LUNYENGU JOSEPH;ZAGABE AGANZE ESTHER;MONGI JACQUES BRIGANCE.
-- **Année universitaire** : 2025/2026
 - **Cours** : Examen de Génie Logiciel – L3 LIAGE / L4 LSI
-
-## Statut du projet
- **Terminé** – toutes les fonctionnalités demandées par le sujet sont implémentées.

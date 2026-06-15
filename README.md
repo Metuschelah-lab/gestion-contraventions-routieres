@@ -5,12 +5,12 @@ Application web complète pour la gestion des contraventions routières.
 Développée dans le cadre de l’examen de **Génie Logiciel** (Licence 3 – LIAGE / Licence 4 – LSI), année 2025/2026.
 
 ## Fonctionnalités principales
-- ✅ **CRUD complet** : Agents, Véhicules, Conducteurs, Contraventions
-- ✅ **Émission d’une contravention** avec génération d’un **avis imprimable**
-- ✅ **Paiement d’une contravention** avec génération d’un **reçu de paiement** (quittance)
-- ✅ **Tableau de bord** : statistiques (nombre d’impayés, montant total dû)
-- ✅ **Tests unitaires** intégrés (page dédiée)
-- ✅ **Interface épurée** avec onglets, responsive
+-  **CRUD complet** : Agents, Véhicules, Conducteurs, Contraventions
+-  **Émission d’une contravention** avec génération d’un **avis imprimable**
+-  **Paiement d’une contravention** avec génération d’un **reçu de paiement** (quittance)
+-  **Tableau de bord** : statistiques (nombre d’impayés, montant total dû)
+-  **Tests unitaires** intégrés (page dédiée)
+-  **Interface épurée** avec onglets, responsive
 
 ## Technologies utilisées
 - **PHP 8.2** (procédural avec fonctions métier)
@@ -23,9 +23,38 @@ Développée dans le cadre de l’examen de **Génie Logiciel** (Licence 3 – L
 2. Placer le dossier `contraventions` dans `C:\xampp\htdocs\`.
 3. Lancer **XAMPP** et démarrer **Apache** (port 8080) et **MySQL** (port 3306).
 4. Importer la base de données :
-   - Ouvrir `phpMyAdmin` → `http://localhost:8080/phpmyadmin`
+   - Ouvrir phpMyAdmin (`http://localhost:8080/phpmyadmin`)
    - Créer une base nommée `contraventions`
-   - Importer le fichier `database.sql` (fichier fourni à la racine du projet)
+   - Exécuter le script SQL suivant (copier-coller dans l'onglet SQL) :
+
+```sql
+CREATE TABLE conducteurs (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(100),
+    prenom VARCHAR(100),
+    num_permis VARCHAR(20)
+);
+
+CREATE TABLE vehicules (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    immatriculation VARCHAR(20),
+    conducteur_id INT
+);
+
+CREATE TABLE agents (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(100),
+    matricule VARCHAR(20)
+);
+
+CREATE TABLE contraventions (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    date_emission DATETIME,
+    montant DECIMAL(10,2),
+    statut VARCHAR(20) DEFAULT 'impayee',
+    vehicule_id INT,
+    agent_id INT
+);
 5. Accéder à l’application :  
    `http://localhost:8080/contraventions/index.php`
 
@@ -57,4 +86,4 @@ Les diagrammes sont dans le dossier `diagrammes/`. Cliquez sur chaque lien pour 
 - **Cours** : Examen de Génie Logiciel – L3 LIAGE / L4 LSI
 
 ## Statut du projet
-✅ **Terminé** – toutes les fonctionnalités demandées par le sujet sont implémentées.
+ **Terminé** – toutes les fonctionnalités demandées par le sujet sont implémentées.

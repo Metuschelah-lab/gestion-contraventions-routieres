@@ -23,6 +23,31 @@ Développée dans le cadre de l’examen de **Génie Logiciel** (Licence 3 – L
 3. Créer une base `contraventions` dans phpMyAdmin et exécuter le script SQL ci-dessous
 4. Accéder à `http://localhost:8080/contraventions/index.php`
 
+## Diagrammes UML
+Les diagrammes sont dans le dossier diagrammes/ :
+Cas d’utilisation
+Classes
+Activité
+Séquence
+Déploiement
+
+## Captures d’écran
+<img width="1366" height="644" alt="Avis de contravention" src="https://github.com/user-attachments/assets/764e9960-1758-4a4c-8993-3108c734361c" />
+<img width="1366" height="645" alt="Recu de contraventions" src="https://github.com/user-attachments/assets/c57c8351-f6c8-4400-a307-28a2956d6c7f" />
+<img width="1366" height="639" alt="Liste de contraventions" src="https://github.com/user-attachments/assets/f92d9dd8-1e1b-4d55-bc8c-26ed340be262" />
+<img width="1366" height="643" alt="Acceuil" src="https://github.com/user-attachments/assets/d9ba3400-0b56-4aaa-b261-7a5126cfc7ab" />
+
+## Tests unitaires
+Rendez-vous sur http://localhost:8080/contraventions/index.php?page=tests
+Résultat attendu : 2 tests passés sur 2.
+
+## Auteurs
+KIZYELE KABASELE METUSCHELAH
+DIMANDJA LUNYENGU JOSEPH
+ZAGABE AGANZE ESTHER
+MONGI JACQUES BRIGANCE
+
+Cours : Examen de Génie Logiciel - L3 LIAGE / L4 LSI
 ## Script SQL (à exécuter dans phpMyAdmin)
 ```sql
 CREATE TABLE conducteurs (
@@ -52,34 +77,3 @@ CREATE TABLE contraventions (
     vehicule_id INT,
     agent_id INT
 );
-
-Captures d’écran
-(Glissez vos images ici après avoir pris les captures)
-
-# Diagrammes UML
-Les diagrammes sont dans le dossier diagrammes/ :
-
-Cas d’utilisation
-
-Classes
-
-Activité
-
-Séquence
-
-Déploiement
-
-Tests unitaires
-Rendez-vous sur http://localhost:8080/contraventions/index.php?page=tests
-Résultat attendu : 2 tests passés sur 2.
-
-Auteurs
-KIZYELE KABASELE METUSCHELAH
-
-DIMANDJA LUNYENGU JOSEPH
-
-ZAGABE AGANZE ESTHER
-
-MONGI JACQUE
-
-Cours : Examen de Génie Logiciel - L3 LIAGE / L4 LSI

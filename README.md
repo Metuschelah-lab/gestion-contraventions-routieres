@@ -2,7 +2,7 @@
 
 ## Description
 Application web complète pour la gestion des contraventions routières.  
-Développée dans le cadre de l’examen de **Génie Logiciel** (Licence 3 – LIAGE / Licence 4 – LSI), année 2025/2026.
+Développée dans le cadre de l’examen de **Génie Logiciel**.
 
 ## Fonctionnalités principales
 - **CRUD complet** : Agents, Véhicules, Conducteurs, Contraventions  

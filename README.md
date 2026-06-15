@@ -1,4 +1,4 @@
-# 🚔 Système de gestion des contraventions routières
+# Système de gestion des contraventions routières
 
 ## Description
 Application web complète pour la gestion des contraventions routières.  
@@ -56,7 +56,7 @@ CREATE TABLE contraventions (
 Captures d’écran
 (Glissez vos images ici après avoir pris les captures)
 
-Diagrammes UML
+# Diagrammes UML
 Les diagrammes sont dans le dossier diagrammes/ :
 
 Cas d’utilisation

@@ -1,77 +1,65 @@
-# Système de gestion des contraventions routières
+#  Système de gestion des contraventions routières
 
 ## Description
 Application web complète pour la gestion des contraventions routières.  
-Développée dans le cadre de l’examen de **Génie Logiciel**.
+Développée dans le cadre de l’examen de **Génie Logiciel** (L3 – LIAGE / L4 – LSI).
+
+Elle propose deux espaces distincts :
+- **Agent** : émettre des PV, consulter ses propres PV, générer l’avis de contravention.
+- **Administrateur** : superviser l’ensemble du système (statistiques, gestion des agents, consultation des véhicules/conducteurs, gestion des contraventions, tests unitaires).
 
 ## Fonctionnalités principales
-- **CRUD complet** : Agents, Véhicules, Conducteurs, Contraventions  
-- **Émission d’une contravention** avec génération d’un **avis imprimable**  
-- **Paiement d’une contravention** avec génération d’un **reçu de paiement** (quittance)  
-- **Tableau de bord** : statistiques (nombre d’impayés, montant total dû)  
-- **Tests unitaires intégrés** (page dédiée)  
-- **Interface épurée** avec onglets, responsive  
+- **Authentification** : deux rôles (Admin / Agent) avec des interfaces dédiées.
+- **Espace Agent** :
+  - Émission d’un procès-verbal (plaque, propriétaire, infraction, montant, etc.).
+  - Synchronisation automatique des véhicules et conducteurs dans les tables dédiées.
+  - Consultation de ses propres PV émis.
+  - Génération d’un **avis de contravention** imprimable.
+- **Espace Admin** :
+  - Tableau de bord avec statistiques globales (nombre de contraventions, impayées, montant total dû).
+  - Gestion des agents (ajout / suppression) avec création automatique du compte de connexion.
+  - Consultation des véhicules et conducteurs (synchronisés automatiquement).
+  - Gestion complète des contraventions (payer, modifier, supprimer).
+  - Génération du **reçu de paiement** (quittance).
+- **Tests unitaires intégrés** : 2 tests automatisés (ajout agent + ajout contravention).
+- **Interface épurée** : onglets, responsive, adaptée à chaque rôle.
 
 ## Technologies utilisées
-- **PHP 8.2** (procédural avec fonctions métier)  
-- **MySQL (MariaDB)** – obligatoire selon le sujet  
+- **PHP 8.2** (procédural avec fonctions métier)
+- **MySQL (MariaDB)** – obligatoire selon le sujet
 - **HTML5 / CSS3** (design personnalisé)
+- **XAMPP** (serveur local)
 
 ## Installation
 1. Copier le dossier `contraventions` dans `C:\xampp\htdocs\`
-2. Démarrer Apache et MySQL (port 8080 pour Apache)
-3. Créer une base `contraventions` dans phpMyAdmin et exécuter le script SQL ci-dessous
-4. Accéder à `http://localhost:8080/contraventions/index.php`
+2. Démarrer **Apache** et **MySQL** dans XAMPP (Apache sur le port 8080)
+3. Importer le fichier `database.sql` dans phpMyAdmin (base `contraventions`)
+4. Accéder à l’application : `http://localhost:8080/contraventions/`
 
 ## Diagrammes UML
-Les diagrammes sont dans le dossier diagrammes/ :
-Cas d’utilisation
-Classes
-Activité
-Séquence
-Déploiement
+Les diagrammes sont dans le dossier `diagrammes/` :
+
+- [Cas d’utilisation](diagrammes/Diagramme%20du%20cas%20d’utilisation.png)
+- [Classes](diagrammes/Diagramme%20de%20classe.png)
+- [Activité](diagrammes/Diagramme%20d’activité.png)
+- [Séquence](diagrammes/Diagramme%20de%20sequence.png)
+- [Déploiement](diagrammes/Diagramme%20de%20déploiement.png)
 
 ## Captures d’écran
-<img width="1366" height="644" alt="Avis de contravention" src="https://github.com/user-attachments/assets/764e9960-1758-4a4c-8993-3108c734361c" />
-<img width="1366" height="645" alt="Recu de contraventions" src="https://github.com/user-attachments/assets/c57c8351-f6c8-4400-a307-28a2956d6c7f" />
-<img width="1366" height="639" alt="Liste de contraventions" src="https://github.com/user-attachments/assets/f92d9dd8-1e1b-4d55-bc8c-26ed340be262" />
-<img width="1366" height="643" alt="Acceuil" src="https://github.com/user-attachments/assets/d9ba3400-0b56-4aaa-b261-7a5126cfc7ab" />
+<img width="1366" height="768" alt="Capture d’écran 2026-06-16 181219" src="https://github.com/user-attachments/assets/a39ca5f5-5b23-4113-b77b-62f5d8f0ffcb" />
+<img width="1366" height="768" alt="Capture d’écran 2026-06-16 181311" src="https://github.com/user-attachments/assets/47c117a0-f73c-4c7f-bd52-8e8a11a9b20b" />
+<img width="1366" height="768" alt="Capture d’écran 2026-06-16 181106" src="https://github.com/user-attachments/assets/5eba3d1f-19cc-443e-aa79-bcf768f7e48f" />
+<img width="1366" height="768" alt="Capture d’écran 2026-06-16 181242" src="https://github.com/user-attachments/assets/47a280bf-953f-4ac8-ad75-ffb096ab91c7" />
+<img width="1366" height="768" alt="Capture d’écran 2026-06-16 181045" src="https://github.com/user-attachments/assets/106f863a-01a8-4d26-bab7-6f1cf4e93359" />
+
+
 
 ## Tests unitaires
-Rendez-vous sur http://localhost:8080/contraventions/index.php?page=tests
-Résultat attendu : 2 tests passés sur 2.
+Accéder à `http://localhost:8080/contraventions/index.php?page=tests`  
+Résultat attendu : **2 tests passés sur 2** (ajout agent + ajout contravention).
 
 ## Auteurs
-KIZYELE KABASELE METUSCHELAH;
-MONGI JACQUES BRIGANCE.
-
-Cours : Examen de Génie Logiciel - L3 LIAGE / L4 LSI
-## Script SQL (à exécuter dans phpMyAdmin)
-```sql
-CREATE TABLE conducteurs (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(100),
-    prenom VARCHAR(100),
-    num_permis VARCHAR(20)
-);
-
-CREATE TABLE vehicules (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    immatriculation VARCHAR(20),
-    conducteur_id INT
-);
-
-CREATE TABLE agents (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(100),
-    matricule VARCHAR(20)
-);
-
-CREATE TABLE contraventions (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    date_emission DATETIME,
-    montant DECIMAL(10,2),
-    statut VARCHAR(20) DEFAULT 'impayee',
-    vehicule_id INT,
-    agent_id INT
-);
+- KIZYELE KABASELE METUSCHELAH
+- MONGI JACQUES BRIGANCE
+- DIMANDJA LUNYENGU JOSEPH
+- ZAGABE AGANZE ESTHER

@@ -39,11 +39,20 @@ Elle propose deux espaces distincts :
 ## Diagrammes UML
 Les diagrammes sont dans le dossier `diagrammes/` :
 
-- [Cas d’utilisation](diagrammes/Diagramme%20du%20cas%20d’utilisation.png)
-- [Classes](diagrammes/Diagramme%20de%20classe.png)
-- [Activité](diagrammes/Diagramme%20d’activité.png)
-- [Séquence](diagrammes/Diagramme%20de%20sequence.png)
-- [Déploiement](diagrammes/Diagramme%20de%20déploiement.png)
+- [Cas d’utilisation]
+  <img width="582" height="876" alt="Diagramme de cas d&#39;utilisation" src="https://github.com/user-attachments/assets/74a51dad-9290-4ec4-8198-94278a0f1833" />
+
+- [Classes]
+  <img width="450" height="677" alt="Diagramme de classe" src="https://github.com/user-attachments/assets/57b72ed4-bf78-4bab-a144-b030a17dbecd" />
+
+- [Activité]
+  <img width="592" height="885" alt="Diagramme d&#39;activite" src="https://github.com/user-attachments/assets/2a3f36af-c5a0-463e-9e04-ad30504c8d7f" />
+
+- [Séquence]
+  <img width="1403" height="711" alt="Diagramme de sequence" src="https://github.com/user-attachments/assets/54f2fb5f-b103-4ce8-a22d-688b74e14d1d" />
+
+- [Déploiement]
+  <img width="1280" height="853" alt="Diagramme de deploiement" src="https://github.com/user-attachments/assets/f893398a-8878-43ab-a3a8-b8414efa6483" />
 
 ## Captures d’écran
 <img width="1366" height="768" alt="Capture d’écran 2026-06-16 181219" src="https://github.com/user-attachments/assets/a39ca5f5-5b23-4113-b77b-62f5d8f0ffcb" />

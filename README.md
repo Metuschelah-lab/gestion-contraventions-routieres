@@ -68,7 +68,7 @@ Accéder à `http://localhost:8080/contraventions/index.php?page=tests`
 Résultat attendu : **2 tests passés sur 2** (ajout agent + ajout contravention).
 
 ## Auteurs
-- KIZYELE KABASELE METUSCHELAH
-- MONGI JACQUES BRIGANCE
-- DIMANDJA LUNYENGU JOSEPH
-- ZAGABE AGANZE ESTHER
+- KIZYELE KABASELE METUSCHELAH. 
+- MONGI JACQUES BRIGANCE. 
+- DIMANDJA LUNYENGU JOSEPH. 
+- ZAGABE AGANZE ESTHER. 
